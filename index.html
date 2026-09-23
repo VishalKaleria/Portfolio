@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vishal Kaleria</title>
+    <meta name="description" content="Vishal Kaleria — I love building things. Creator of RailRadar (10M+ reqs/day, 350k+ users)." />
+
+    <meta property="og:title" content="Vishal Kaleria" />
+    <meta property="og:description" content="I love building things. Creator of RailRadar (10M+ reqs/day, 350k+ users)." />
+    <meta property="og:url" content="https://vishax.com" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@VishalKaleria" />
+    <meta name="twitter:title" content="Vishal Kaleria" />
+    <meta name="twitter:description" content="I love building things. Creator of RailRadar (10M+ reqs/day, 350k+ users)." />
+
+    <style>
+        :root {
+            --bg: #ffffff;
+            --fg: #0a0a0a;
+            --soft: #444444;
+            --muted: #8a8a8a;
+            --faint: #e5e5e5;
+            --accent: #2563eb;
+            --maxw: 680px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0a0a0b;
+                --fg: #f5f5f5;
+                --soft: #c4c4c4;
+                --muted: #7a7a7a;
+                --faint: #262629;
+                --accent: #7db3ff;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            -webkit-text-size-adjust: 100%;
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--fg);
+            font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-size: 15px;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .wrap {
+            max-width: var(--maxw);
+            margin: 0 auto;
+            padding: 72px 24px 80px;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* header */
+        h1 {
+            font-size: 1.35rem;
+            font-weight: 600;
+            margin: 0 0 4px;
+            letter-spacing: -0.01em;
+        }
+
+        .lead {
+            color: var(--soft);
+            font-size: 1rem;
+            margin: 0 0 16px;
+        }
+
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px 16px;
+            color: var(--soft);
+            font-size: 0.88rem;
+        }
+
+        /* sections */
+        section {
+            margin-top: 44px;
+        }
+
+        .label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            border-bottom: 1px solid #2e2e2e;
+            color: var(--muted);
+            margin: 0 0 14px;
+        }
+
+        p {
+            margin: 0 0 10px;
+            color: var(--fg);
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        .big {
+            font-weight: 600;
+        }
+
+        /* railradar */
+        .rr-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .rr-title {
+            font-weight: 600;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px 16px;
+            margin: 22px 0;
+        }
+
+        @media (min-width: 560px) {
+            .stats {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        .stat .num {
+            font-size: 1.25rem;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            color: var(--fg);
+        }
+
+        .stat .cap {
+            font-size: 0.8rem;
+            color: var(--soft);
+            line-height: 1.35;
+            margin-top: 2px;
+        }
+
+        .stackline {
+            font-size: 0.85rem;
+            color: var(--soft);
+        }
+
+        /* projects */
+        .proj {
+            margin-bottom: 20px;
+        }
+
+        .proj:last-child {
+            margin-bottom: 0;
+        }
+
+        .proj-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 12px;
+        }
+
+        .proj-name {
+            font-weight: 600;
+        }
+
+        .proj-meta {
+            color: var(--soft);
+            font-size: 0.85rem;
+            white-space: nowrap;
+        }
+
+        .proj p {
+            color: var(--soft);
+            margin: 4px 0 0;
+        }
+
+        /* stack */
+        .stackgrid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 7px;
+            font-size: 0.9rem;
+            color: var(--fg);
+        }
+    </style>
+</head>
+
+<body>
+    <main class="wrap">
+
+        <header>
+            <h1>Vishal Kaleria</h1>
+            <p class="lead">I love building things.</p>
+            <div class="links">
+                <a href="mailto:vishal@vishax.com">Email</a>
+                <a href="https://github.com/VishalKaleria" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://x.com/VishalKaleria" target="_blank" rel="noopener">X</a>
+                <a href="https://linkedin.com/in/VishalKaleria" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+        </header>
+
+        <section>
+            <p class="label">About</p>
+            <p>I'm Vishal, <span id="age"></span>, from Ujjain. Self-taught, started coding around 15.</p>
+            <p>When I build something, I make sure nobody has to think to use it.</p>
+        </section>
+
+        <section>
+            <p class="label">Flagship</p>
+            <div class="rr-head">
+                <span class="rr-title">RailRadar</span>
+                <a href="https://railradar.in" target="_blank" rel="noopener">railradar.in</a>
+            </div>
+            <p style="margin-top:10px;">Indian Railways gave up on building this. I didn't.</p>
+
+            <div class="stats">
+                <div class="stat">
+                    <div class="num">350k+</div>
+                    <div class="cap">monthly users</div>
+                </div>
+                <div class="stat">
+                    <div class="num">10M+</div>
+                    <div class="cap">requests / day</div>
+                </div>
+                <div class="stat">
+                    <div class="num">sub-50ms</div>
+                    <div class="cap">API latency</div>
+                </div>
+                <div class="stat">
+                    <div class="num">20+</div>
+                    <div class="cap">B2B customers</div>
+                </div>
+            </div>
+
+            <p class="stackline">Bun, Hono, PostgreSQL, Redis, Next.js, MapLibre</p>
+        </section>
+
+        <section>
+            <p class="label">Selected Projects</p>
+
+            <div class="proj">
+                <div class="proj-head">
+                    <span class="proj-name">SocialSaver</span>
+                    <span class="proj-meta">100 ★ · <a href="https://github.com/VishalKaleria/social-saver"
+                            target="_blank" rel="noopener">GitHub</a></span>
+                </div>
+                <p>Media downloader for 1,000+ sites. yt-dlp, gallery-dl + FFmpeg, concurrent queues, 100k+ users.</p>
+            </div>
+
+            <div class="proj">
+                <div class="proj-head">
+                    <span class="proj-name">YT-DLP Command Generator</span>
+                    <span class="proj-meta">63 ★ · <a href="https://github.com/VishalKaleria/ytdlp-command-generator"
+                            target="_blank" rel="noopener">GitHub</a></span>
+                </div>
+                <p>A guided UI that builds complex yt-dlp commands.</p>
+            </div>
+        </section>
+
+        <section>
+            <p class="label">Stack</p>
+            <div class="stackgrid">
+                <div><strong>Core:</strong> TypeScript, Bun, Node, SQL</div>
+                <div><strong>Backend:</strong> Hono, PostgreSQL, Kysely, Redis, BullMQ</div>
+                <div><strong>Frontend:</strong> Next.js, React 19, MapLibre GL, Tailwind</div>
+                <div><strong>Mobile & Desktop:</strong> Capacitor, Electron</div>
+                <div><strong>Infra:</strong> Cloudflare, Docker, Oracle Cloud, Caddy, AWS</div>
+            </div>
+        </section>
+
+        <section>
+            <p class="label">Contact</p>
+            <p>Available for freelance work. Reach out at <a href="mailto:vishal@vishax.com">vishal@vishax.com</a>.</p>
+        </section>
+
+    </main>
+</body>
+<script>
+    const bday = new Date("2007-04-10T07:30");
+    const today = new Date();
+
+    // Check if birthday hasn't happened yet this year (Jan-Mar, or Apr 1-9)
+    const shouldReduce = today.getMonth() < 3 || (today.getMonth() === 3 && today.getDate() < 10);
+
+    const yearOld = today.getFullYear() - bday.getFullYear() - (shouldReduce ? 1 : 0);
+
+    document.getElementById("age").textContent = yearOld;
+</script>
+
+
+</html>
